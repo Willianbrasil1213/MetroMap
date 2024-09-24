@@ -1,0 +1,58 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5e6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ff6600;
+}
+
+.form-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffe6cc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    color: #cc5200;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffb380;
+    border-radius: 5px;
+    resize: none;
+}
+
+button.menu-button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button.menu-button:hover {
+    background-color: #cc5200;
+}
+
+#mensagem-sucesso {
+    margin-top: 20px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}

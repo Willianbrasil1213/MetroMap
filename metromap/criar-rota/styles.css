@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5e6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ff6600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffe6cc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #cc5200;
+    margin-bottom: 5px;
+}
+
+select {
+    width: calc(100% - 20px); /* Diminui a largura para dar espaço */
+    padding: 8px; /* Menor padding */
+    margin-bottom: 15px; /* Menor espaçamento inferior */
+    border: 1px solid #ffb380;
+    border-radius: 5px;
+    font-size: 14px; /* Diminui o tamanho da fonte */
+}
+
+button.menu-button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 8px 16px; /* Menor padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Espaçamento superior para o botão */
+}
+
+button.menu-button:hover {
+    background-color: #cc5200;
+}
+
+#resultado {
+    margin-top: 20px;
+}
+
+#resultado h2 {
+    margin-bottom: 10px; /* Espaçamento inferior do título */
+}
+
+#lista-onibus {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px; /* Espaçamento inferior da lista */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilos para o mapa das estações */
+#mapa-estacoes {
+    display: block;
+    margin: 20px auto;
+    background-color: #898989;
+    border: 2px solid #ffb380;
+    border-radius: 10px;
+    width: 100%; /* Ajusta para a largura total do contêiner */
+    max-width: 800px; /* Limite máximo de largura */
+    height: 400px; /* Altura fixa para o mapa */
+}
+
+canvas {
+    border: 1px solid #ffb380;
+    border-radius: 10px;
+    width: 100%; /* Ajusta para a largura total do contêiner */
+    height: 100%; /* Altura total do contêiner */
+}

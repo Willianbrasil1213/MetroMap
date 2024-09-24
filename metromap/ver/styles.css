@@ -1,0 +1,100 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5e6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #ff6600;
+}
+
+.linha-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffe6cc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    color: #cc5200;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ffb380;
+    border-radius: 5px;
+}
+
+button.menu-button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button.menu-button:hover {
+    background-color: #cc5200;
+}
+
+#resultado-linha {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff2e6;
+    border-radius: 10px;
+    border: 1px solid #ffb380;
+}
+
+.hidden {
+    display: none;
+}
+
+ul#rota-onibus {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul#rota-onibus li {
+    background-color: #ffcc99;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/* Estilo para as linhas favoritas */
+h2 {
+    margin-top: 30px;
+}
+
+ul#linhas-favoritas {
+    list-style-type: none;
+    padding-left: 0;
+    background-color: #ffe6cc;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ffb380;
+}
+
+ul#linhas-favoritas li {
+    background-color: #ffcc99;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-weight: bold; /* Destaque para as linhas favoritas */
+}
+
+button.hidden {
+    display: none; /* Oculta o botão de favoritar quando não necessário */
+}

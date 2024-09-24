@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Linhas de Ônibus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="linha-container">
+        <h1>Ver Linhas de Ônibus</h1>
+        <label for="linha-input">Digite o número da linha:</label>
+        <input type="text" id="linha-input" placeholder="Ex: 101">
+        <br><br>
+        <button onclick="buscarLinha()" class="menu-button">Buscar Linha</button>
+
+        <h2>Linhas Favoritas</h2>
+        <ul id="linhas-favoritas">
+            <!-- As linhas favoritas serão listadas aqui -->
+        </ul>
+
+        <div id="resultado-linha" class="hidden">
+            <h2>Informações da Linha</h2>
+            <p id="horarios-linha"></p>
+            <h3>Rota do Ônibus:</h3>
+            <ul id="rota-onibus">
+                <!-- Rota do ônibus será inserida aqui -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

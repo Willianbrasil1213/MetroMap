@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Meu Perfil</h1>
+        <div class="profile-info">
+            <p><strong>Nome:</strong> João Silva</p> <!-- Substitua pelo nome dinâmico do usuário -->
+            <p><strong>Email:</strong> joao.silva@example.com</p> <!-- Substitua pelo email dinâmico do usuário -->
+            <p><strong>Data de cadastro:</strong> 01/09/2023</p> <!-- Exemplo de data de cadastro -->
+        </div>
+
+        <h2>Linhas Favoritas</h2>
+        <ul id="linhas-favoritas">
+            <!-- As linhas favoritas serão listadas aqui -->
+        </ul>
+
+        <button onclick="editarPerfil()">Editar Perfil</button> <!-- Botão para possível edição de perfil -->
+    </div>
+
+    <script>
+        // Exemplo de linhas favoritas armazenadas
+        const linhasFavoritas = ["101", "202"]; // Essas podem ser recuperadas do armazenamento local
+
+        // Função para exibir linhas favoritas na conta
+        function mostrarLinhasFavoritas() {
+            const listaFavoritas = document.getElementById("linhas-favoritas");
+            listaFavoritas.innerHTML = ''; // Limpa a lista anterior
+
+            linhasFavoritas.forEach(linha => {
+                const listItem = document.createElement('li');
+                listItem.textContent = linha;
+                listaFavoritas.appendChild(listItem);
+            });
+        }
+
+        function editarPerfil() {
+            alert("Funcionalidade de editar perfil em breve!"); // Placeholder para funcionalidade futura
+        }
+
+        // Chamar a função para mostrar as linhas favoritas ao carregar a página
+        mostrarLinhasFavoritas();
+    </script>
+</body>
+</html>

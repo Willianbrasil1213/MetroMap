@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Rota</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="rota-container">
+        <h1>Criar Rota</h1>
+        <label for="ponto-partida">Selecione o ponto de partida:</label>
+        <select id="ponto-partida">
+            <option value="Alfa">Alfa</option>
+            <option value="Beta">Beta</option>
+            <option value="Gama">Gama</option>
+            <option value="Delta">Delta</option>
+            <option value="Epsilon">Epsilon</option>
+            <option value="Zeta">Zeta</option>
+            <option value="Lambda">Lambda</option>
+            <option value="Mu">Mu</option>
+            <option value="Kappa">Kappa</option>
+            <option value="Iota">Iota</option>
+            <option value="Teta">Teta</option>
+            <option value="Eta">Eta</option>
+            
+            <!-- Outros pontos... -->
+        </select>
+
+        <br><br>
+
+        <label for="ponto-chegada">Selecione o ponto de chegada:</label>
+        <select id="ponto-chegada">
+            <option value="Alfa">Alfa</option>
+            <option value="Beta">Beta</option>
+            <option value="Gama">Gama</option>
+            <option value="Delta">Delta</option>
+            <option value="Epsilon">Epsilon</option>
+            <option value="Zeta">Zeta</option>
+            <option value="Lambda">Lambda</option>
+            <option value="Mu">Mu</option>
+            <option value="Kappa">Kappa</option>
+            <option value="Iota">Iota</option>
+            <option value="Teta">Teta</option>
+            <option value="Eta">Eta</option>
+            <!-- Outros pontos... -->
+        </select>
+
+        <br><br>
+
+        <button onclick="criarRota()" class="menu-button">Mostrar Ônibus</button>
+
+        <div id="resultado" class="hidden">
+            <h2>Rota:</h2>
+            <ul id="lista-onibus">
+                <!-- Lista de ônibus será inserida aqui -->
+            </ul>
+            <canvas id="mapa-estacoes" width="800" height="600"></canvas>
+        </div>
+    </div>
+
+    <script src="criar-rota.js"></script>
+</body>
+</html>
